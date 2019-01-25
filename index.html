@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello My Name is <p #firstName>Rebecca</p> <p #secondName>Rebecca</p></h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <p>I'm hosted with GitHub Pages.</p>
+    
+    <h1>Hello My Name is 
+        <p #firstName></p> 
+        <p #secondName></p>
+    </h1>
+    
 <img src="images/cockapoo.jpg" alt="picture of dog"/>
-<button type="button" onclick="document.getElementById('firstName') = document.getElementById('first').value;
-              document.getElementById('secondName') = document.getElementById('second').value;">Click Me!</button>
+    
+<script>
+    function changeName(id, firstName) {    
+        document.getElementById(id).input.name = firstName;
+    }
+</script>
+    
+<button type="button" onclick="changeName(firstName, Rebecca)">Click Me!</button>
     
 <form action="">
   First name: <input type="text" id="first" name="fname"><br>
