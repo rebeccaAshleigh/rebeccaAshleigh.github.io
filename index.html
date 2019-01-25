@@ -4,12 +4,10 @@
 <h1>Hello My Name is <p #firstName>Rebecca</p> <p #secondName>Rebecca</p></h1>
 <p>I'm hosted with GitHub Pages.</p>
 <img src="images/cockapoo.jpg" alt="picture of dog"/>
-<button type="button" onclick="
-    alert('Hey do you like my dog!');
-    ">Click Me!</button>
+<button type="button" onclick="document.getElementById('firstName') = document.getElementById('first').value;
+              document.getElementById('secondName') = document.getElementById('second').value;">Click Me!</button>
     
-<form action="document.getElementById('firstName') = document.getElementById('first').value;
-              document.getElementById('secondName') = document.getElementById('second').value;">
+<form action="">
   First name: <input type="text" id="first" name="fname"><br>
   Last name: <input type="text" id="second" name="lname"><br>
   <input type="submit" value="Submit">
